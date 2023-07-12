@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
-                sh nohup 'C:/ProgramData/Jenkins/.jenkins/workspace/HelloWorld/HelloWorld/gradlew build'
+                sh '/B C:/ProgramData/Jenkins/.jenkins/workspace/HelloWorld/HelloWorld/gradlew build'
             }
         }
         stage('Test') {
