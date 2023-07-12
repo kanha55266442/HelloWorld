@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
+                dir '/HelloWorld'
                 bat 'gradle build'
             }
         }
