@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
-                dir('C:/ProgramData/Jenkins/.jenkins/workspace/HelloWorld/HelloWorld/HelloWorld'){
+                dir('C:/ProgramData/Jenkins/.jenkins/workspace/HelloWorld/HelloWorld'){
                    bat 'gradlew build'
                 }
             }
