@@ -5,8 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
-                dir '/HelloWorld'
-                bat 'gradle build'
+                dir('C:/ProgramData/Jenkins/.jenkins/workspace/HelloWorld/HelloWorld/HelloWorld'){
+                   bat 'gradle build'
+                }
             }
         }
         stage('Test') {
